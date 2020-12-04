@@ -2,12 +2,87 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Taco Cloud</title>
-  <link rel="stylesheet" th:href="@{/styles.css}" />
+  <title>Transportation Management System</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  	
 </head>
 <body>
-  <h1>Welcome to our Website</h1>
-<!--  <img th:src="@{/images/TacoCloud.png}"/>-->
-  <a th:href="@{/taixe}" id="another">Danh sách tài xế</a><br/>
+	</div>
+	  	<div id="menu"> 
+	  	<ul>
+	  		<li> <a href="/home"> Trang Chủ </a> </li>
+	  		<li> <a href="#"> Tài xế </a> 
+	  			<ul class="dich-vu">
+	  				<li> <a href="TaiXe/addTaiXe"> Thêm mới </a> </li>
+	  				<li> <a href="TaiXe/listTaiXe"> Danh sách </a> </li>
+	  			</ul>
+	  		</li>
+	  		<li> <a href="#"> Xe Khách </a> 
+	  			<ul class="dich-vu">
+	  				<li> <a href="XeKhach/addXeKhach"> Thêm mới </a> </li>
+	  				<li> <a href="XeKhach/listXeKhach"> Danh sách </a> </li>
+	  			</ul>
+	  		</li>
+	  		<li> <a href="#"> Tuyến Xe </a> 
+	  			<ul class="dich-vu">
+	  				<li> <a href="XeKhach/addXeKhach"> Thêm mới </a> </li>
+	  				<li> <a href="TuyenXe/listTuyenXe"> Danh sách </a> </li>
+	  			</ul>
+	  		</li>
+	  		<li> <a href="#"> Chuyến Xe </a> 
+	  			<ul class="dich-vu">
+	  				<li> <a href="#"> Thêm mới </a> </li>
+	  				<li> <a href="#"> Danh sách </a> </li>
+	  			</ul>
+	  		</li>
+	  	</ul>
+  	</div>
+  	<div id="header">
+  	<!-- <div id="coach">
+  		<ul>
+	  		<li><a href="#" title="Tài xế">Tài xế<a/></li>
+	  		<li><a href="#" title="Tuyến xe">Tuyến xe<a/></li>
+	  		<li><a href="#" title="Xe khách">Xe khách<a/></li>
+	  		<li><a href="#" title="Chuyến Xe">Chuyến xe<a/></li>
+  		</ul>
+  	</div> -->
+  		<div id="log">
+  			<i class="fas fa-user-circle" style="color: white"></i>
+  			<a href="#" title="Tài xế">Minh Dat<a/>
+  			<i class="fas fa-sign-out-alt" style="color: white" ></i>
+  		</div>
+    </div>
+	<div id="banner">
+	  	<img src="images/bus_banner2.jpg"/>
+	</div>
+	<div class="khoi-slide">
+		<div class="cac-slide">
+			<div class="slide active"><img src="images/coach1.png" ></div>
+			<div class="slide"><img src="images/coach2.jpg" ></div>
+			<div class="slide"><img src="images/coach3.jpg"></div>
+		</div>
+		<div class="nut-slide">
+			<span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+			<span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id=footer>
+		<ul>
+			<li>HỖ TRỢ KHÁCH HÀNG</li>
+			<li>Hotline chăm sóc khách hàng: 1900-6035</li>
+			<li>Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ Chí Minh</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
